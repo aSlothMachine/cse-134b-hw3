@@ -1,0 +1,219 @@
+/* * {
+    font-size: normal;
+    font-family: "Montserrat";
+
+    
+    
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    font-style: bold;
+    font-weight: normal;
+    src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+/*@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: normal;
+    src: url("fonts/Roboto-Italic.ttf") format("truetype");
+  } */
+
+/* Add a black background color to the top navigation */
+/* #top-nav-bar {
+    background-color: black;
+    overflow: hidden;
+    font-family: "Montserrat";
+    font-weight: normal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+#top-nav-bar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+#top-nav-bar a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+#top-nav-bar a:active {
+    background-color: white;
+    color: black;
+}
+
+
+header {
+    padding: 200px;
+    text-align: center;
+
+    color: whitesmoke;
+    font-size: normal;
+    font-family: "Montserrat";
+
+
+    
+
+} */
+
+/* header {
+    padding: 400px;
+    text-align: center;
+    background: #7c7e7d;
+    color: white; 
+    font-size: normal;
+    font-family: "Roboto";
+    background-image: url('images/keyboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+/* body */
+/* 
+h2 {
+    font-family: "Montserrat-bold", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Section Borders*/
+/* header,
+section {
+    border-bottom: 1px solid black;
+    
+
+}
+
+#ABOUT {
+    background: #6699cc;
+} */ 
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+/* @font-face {
+    font-family: "Montserrat-bold";
+    font-style: bold;
+    font-weight: normal;
+    src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: normal;
+    src: url("fonts/Roboto-Italic.ttf") format("truetype");
+  }  */
+
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    --text-primary: #272635;
+    /* --text-secondary: #ececec; */
+    --text-link: #abcdef;
+    /* --bg-nav-primary: #23232e;
+    --bg-nav-secondary: #141418; */
+    --bg-body: #E8E9F3;
+    --bg-section: #CECECE;
+    /* --transition-speed: 600ms; */
+  }
+  
+  body {
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+  }
+  
+  section {
+    background-color: var(--bg-section);
+    padding: 10px;
+    margin: 10px;
+    margin-top:40px
+  }
+  
+  header {
+    padding: 200px;
+    text-align: center;
+  
+    color: var(--text-primary);
+    font-size: normal;
+    font-family: "Montserrat";
+  
+  }
+  
+  header,
+  section {
+      border-bottom: 1px solid black;
+  }
+  
+  #ABOUT {
+    /* background-color: var(); */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #ABOUT > div {
+    flex-grow: 1;
+    width: 0;
+  }
+  
+  img {
+    object-fit:cover;
+    width: 20em;
+    height: 20em;
+  }
+  
+  /* Style the links inside the navigation bar */
+  #top-nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 17px;
+    background-color: gray;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+  
+  #top-nav-bar a:nth-child(1) {
+    background-color: aliceblue;
+    justify-self: left;
+  }
+  
+  /* Change the color of links on hover */
+  #top-nav-bar a:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  #top-nav-bar a:active {
+    background-color: white;
+    color: black;
+  }
+
+ 

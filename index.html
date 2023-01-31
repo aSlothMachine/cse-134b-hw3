@@ -7,23 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio of Richie Porras</title>
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-    <style>
-        section {
-            border-style: ridge;
-        }
-
-        table,
-        td {
-            border: 1px solid black;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav id="top-nav-bar">
-        <a href="#about">About</a>
+        <a href="#ABOUT">About</a>
         <a href="#projects">Projects</a>
         <a href="#coursework">Coursework</a>
         <a href="#skills">Skills</a>
@@ -39,24 +29,24 @@
     </header>
 
     <main>
-        <section>
-            <h2 id="about">About</h2>
+        <section id="ABOUT">
+            <div>
+                <h2 id="about">About</h2>
+                <img src="images/Dog.jpg" alt="a picture of me">
+            </div>
             <div id="about_div">
-                <img src="images/Dog.jpg" alt="Temporary Picture" width="250" height="250">
                 <p>
                     My projects and assignments have made me become familiar with JavaScript, HTML, CSS, SystemVerilog,
                     Python, and C++.
-                    <br>
                     This online portfolio is where I will showcase available projects to illustrate my data structures
                     and algorithms knowledge
-                    <br>
                     with the new programming abilities I gained while attending UCSD.
                 </p>
             </div>
         </section>
 
-        <section>
-            <h2 id="projects">Projects</h2>
+        <section id="projects">
+            <h2 >Projects</h2>
             <div id="projects-div">
                 <h3> Bullet Journal Single Page App (June 2021)</h3>
                 <ul>
@@ -82,8 +72,8 @@
             </div>
         </section>
 
-        <section>
-            <h2 id="coursework">Coursework</h2>
+        <section id="coursework">
+            <h2>Coursework</h2>
             <div id="coursework-div">
 
                 <h3>CSE 100: Advanced Data Structures</h3>
@@ -121,8 +111,8 @@
             </div>
         </section>
 
-        <section>
-            <h2 id="skills">Skills</h2>
+        <section id="skills">
+            <h2>Skills</h2>
             <div id="skills-div">
                 <h3> Programming & Technologies </h3>
                 <ul>
@@ -138,8 +128,8 @@
             </div>
         </section>
 
-        <section>
-            <h2 id="contact">Contact</h2>
+        <section id="contact">
+            <h2>Contact</h2>
             <div id="contact-div">
                 <fieldset>
                     <legend>Email me:</legend>
@@ -158,171 +148,9 @@
                         alt="GitHub Link" height="50" width="65"></a>
             </div>
         </section>
-
-        <section>
-            <h2>Experiments for HW2</h2>
-
-            <label for="game-select">Choose a video game:</label>
-            <select id="game-select">
-                <optgroup label="FPS">
-                    <option>Overwatch</option>
-                    <option>Team Fortress 2</option>
-                    <option>Valorant</option>
-                    <option>CS:GO</option>
-                </optgroup>
-                <optgroup label="Single Player">
-                    <option>Sekiro</option>
-                    <option>Dark Souls 3</option>
-                    <option>Elden Ring</option>
-                    <option>Skyrim</option>
-                </optgroup>
-            </select>
-            <br>
-            <br>
-            <strong>THIS IS THE STRONG TAG</strong>
-            <br>
-            <br>
-
-            <table>
-                <caption>Here are some fruits & vegetables I grew</caption>
-                <colgroup>
-                    <col span="5" class="food-table">
-                </colgroup>
-                <tr>
-                    <th>Fruits:</th>
-                    <td>Apples</td>
-                    <td>Orange</td>
-                    <td>Strawberry</td>
-                    <td>Grapes</td>
-                </tr>
-                <tr>
-                    <th>Vegetables:</th>
-                    <td>Cabbage</td>
-                    <td>Tomato</td>
-                    <td>Potato</td>
-                    <td>Broccoli</td>
-                </tr>
-            </table>
-
-            <br>
-            <br>
-
-            <figure>
-                <figcaption>When a website suffers from "div-itis"</figcaption>
-                <audio controls>
-                    <source src="media/kitchen-nightmares.mp3">
-                </audio>
-            </figure>
-
-            <br>
-            <br>
-
-            <video width="320" height="240" controls>
-                <source src="media/Milky-way.mp4" type="video/mp4">
-            </video>
-            <br>
-            <br>
-            <em>This is written with the em tag.</em>
-            <br>
-            <br>
-            <details>
-                <summary>Worldcup 2022</summary>
-                <i>Argentina won the world cup.</i>
-                <aside>
-                    <h3>Trivia: </h3>
-                    <p>This is Messi's 2nd World Cup final he participated in.</p>
-                </aside>
-            </details>
-
-            <br>
-            <br>
-
-            <label for="cse">Choose your favorite CSE class:</label>
-            <input list="cse-classes" name="cse" id="cse">
-
-            <datalist id="cse-classes">
-                <option value="CSE100">
-                <option value="CSE101">
-                <option value="CSE105">
-                <option value="CSE110">
-                <option value="CSE120">
-            </datalist>
-
-            <br>
-            <br>
-            <p>Choose your favorite snack:</p>
-            <form>
-                <input type="radio" id="chips" name="fav_snacks" value="CHIPS">
-                <label for="chips">Chips</label><br>
-                <input type="radio" id="candy" name="fav_snacks" value="CANDY">
-                <label for="candy">Candy</label><br>
-                <input type="radio" id="cookies" name="fav_snacks" value="COOKIES">
-                <label for="cookies">Cookies</label>
-            </form>
-
-            <h3> Some 3D Zelda games ranked:</h3>
-            <ol>
-                <li>Ocarina of Time</li>
-                <li>Majoras Mask</li>
-                <li>Wind Waker</li>
-                <li>Twilight Princess</li>
-                <li>Skyward Sword</li>
-            </ol>
-
-            <br>
-            <p> Some code with the code tag</p>
-            <code>
-                x = 5;
-                y = 4;
-                z = x + y;
-                printf("sum: %d", z);
-            </code>
-
-            <p> Button existance</p>
-            <button type="button">I don't work :(!</button>
-
-            <p>JavaScript not allowed to reveal template:</p>
-            <template>
-                <h2>Cat</h2>
-                <img src="images/puss-in-boots.jpg" width="214" height="204">
-            </template>
-
-            <p> iframe test: </p>
-
-            <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
-                title="Map">
-            </iframe>
-
-            <p> Picture tag test: change browser size.</p>
-
-            <picture>
-                <source srcset="images/yellow-bird.jpg">
-                <source srcset="images/red-bird.jpg">
-                <img src="images/orange-bird.jpg" alt="Birds">
-            </picture>
-
-            <p> Canvas incoming . . . </p>
-            <canvas width="300" height="300">
-                This is a test with Canvas and a favorite color.
-            </canvas>
-
-            <script>
-                const canvas = document.querySelector('canvas');
-                const ctx = canvas.getContext('2d');
-                ctx.fillRect(10, 10, 100, 100);
-            </script>
-
-            <p> svg test</p>
-            <svg width="150" height="150">
-                <circle cx="75" cy="75" r="50" stroke="black" stroke-width="2" fill="orange" />
-            </svg>
-        </section>
-
     </main>
 
     <footer>
-        <hr>
         <pre>💯This page was made with &hearts; by Richie Porras 💯</pre>
     </footer>
 
