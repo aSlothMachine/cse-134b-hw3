@@ -87,6 +87,8 @@ button {
   cursor: pointer;
   order: 3;
   margin-left: auto;
+  width: 200px;
+  height: auto;
 }
 
 nav {
