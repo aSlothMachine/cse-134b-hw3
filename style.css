@@ -1,16 +1,10 @@
 :root {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  --text-primary: #272635;
-  --text-secondary:
-    --bg-body: #FCFCFC;
-
-  /* --text-link: #abcdef; */
-  /* --bg-nav-primary: #23232e;
-  --bg-nav-secondary: #141418; */
-  /* --bg-body: #E8E9F3;
-  --bg-section: #CECECE; */
-  /* --transition-speed: 600ms; */
+  --text-primary: #312F2F;
+  --text-secondary: rgba(0, 136, 169, 1);
+  --text-tertiary: #FE621D;
+  --bg-body: white;
 }
 
 @font-face {
@@ -24,18 +18,47 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: var(--bg-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#my-name {
+  color: var(--text-secondary);
+}
+#change:after {
+  content: "a computer science student at UC, San Diego.";
+  animation: animate linear infinite 10s;
+  padding-left: 10px;
+  
+}
+
+@keyframes animate {
+  
+  0% {
+      content: "a computer science student at UC, San Diego.";
+  }
+
+  50% {
+      content: "a first generation student.";
+  }
+
+  75% {
+      content: "an asipiring software engineer.";
+  }
 }
 
 header {
-  padding: 150px;
+  padding: 370px;
   text-align: center;
 
   /* color: var(--text-primary); */
   color: #312F2F;
   font-size: normal;
   font-family: "Montserrat";
-  background-color: white;
+  background-color: var(--bg-body);
 }
 
 /* Nav Bar CSS*/
@@ -45,9 +68,12 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  /* color: #edf0f1; */
   color: var(--text-primary);
   text-decoration: none;
+}
+
+.about-text span {
+  color: var(--text-tertiary);
 }
 
 .heading {
@@ -95,7 +121,7 @@ nav {
 button {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: var(--text-secondary);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -103,7 +129,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: var(--text-secondary);
 }
 
 /* Sections */
@@ -111,14 +137,14 @@ button:hover {
 /* About section */
 body {
   color: var(--text-primary);
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: var(--text-secondary)
 }
 
 /* section */
 #about {
   width: 100%;
   padding: 78px;
-  background-color: white;
+  background-color: var(--bg-body)
 }
 
 #about img {
@@ -137,26 +163,22 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 
 .about-text h2 {
-  color: rgba(0, 136, 169, 0.8);
+  color: var(--text-secondary);
   font-size: 80px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .about-text h3 {
-  color: rgba(0, 136, 169, 0.8);
+  color: var(--text-secondary);
   font-size: 25px;
   text-transform: capitalize;
   margin-bottom: 25px;
   letter-spacing: 2px;
-}
-
-.about-text span {
-  color: #f5987D;
 }
 
 .about-text p {
@@ -171,7 +193,7 @@ body {
 #projects {
   width: 100%;
   padding: 78px;
-  background-color: white;
+  background-color: var(--bg-body);
 }
 
 .projects-text {
@@ -186,14 +208,14 @@ body {
 }
 
 .projects-text h2 {
-  color: rgba(0, 136, 169, 0.8);
+  color: var(--text-secondary);
   font-size: 80px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .projects-text h3 {
-  color: rgba(0, 136, 169, 0.8);
+  color: var(--text-secondary);
   font-size: 25px;
   text-transform: capitalize;
   margin-bottom: 25px;
@@ -209,3 +231,83 @@ body {
 }
 
 /* Coursework Section */
+#coursework {
+  width: 100%;
+  padding: 78px;
+  background-color: var(--bg-body);
+}
+
+.coursework-text {
+  width: 550px;
+}
+
+.coursework-main {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.coursework-text h2 {
+  color: rgba(0, 136, 169, 0.8);
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.coursework-text h3 {
+  color: rgba(0, 136, 169, 0.8);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.coursework-text p {
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+/* Skills Section */
+#skills {
+  width: 100%;
+  padding: 78px;
+  background-color: var(--bg-body);
+}
+
+.skills-text {
+  width: 550px;
+}
+
+.skills-main {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.skills-text h2 {
+  color: var(--text-secondary);
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.skills-text h3 {
+  color: var(--text-secondary);;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.coursework-text p {
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+} 
