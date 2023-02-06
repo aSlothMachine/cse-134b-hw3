@@ -4,7 +4,7 @@
   --text-primary: #312F2F;
   --text-secondary: rgba(0, 136, 169, 1);
   --text-tertiary: #FE621D;
-  --bg-body: white;
+  --bg-body: #fff;
 }
 
 @font-face {
@@ -17,51 +17,91 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  background-color: var(--bg-body);
+  /* background-color: var(--bg-body); */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+header {
+  text-align: center;
+  padding: 400px;
+  background-image: url("images/img-header.jpg");
+  background-size: cover;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-size: 40px;
+  background-color: var(--bg-body);
+}
+
+h2 {
+  color: var(--text-secondary);
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: var(--text-secondary);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+
+  0% {
+    content: "a computer science student at UC, San Diego.";
+  }
+
+  50% {
+    content: "a first generation student.";
+  }
+
+  75% {
+    content: "an asipiring software engineer.";
+  }
+}
+
 #my-name {
   color: var(--text-secondary);
 }
+
 #change:after {
   content: "a computer science student at UC, San Diego.";
   animation: animate linear infinite 10s;
   padding-left: 10px;
-  
-}
 
-@keyframes animate {
-  
-  0% {
-      content: "a computer science student at UC, San Diego.";
-  }
-
-  50% {
-      content: "a first generation student.";
-  }
-
-  75% {
-      content: "an asipiring software engineer.";
-  }
-}
-
-header {
-  padding: 370px;
-  text-align: center;
-
-  /* color: var(--text-primary); */
-  color: #312F2F;
-  font-size: normal;
-  font-family: "Montserrat";
-  background-color: var(--bg-body);
 }
 
 /* Nav Bar CSS*/
+
 .heading li,
 a,
 button {
@@ -81,6 +121,8 @@ button {
   justify-content: flex-end;
   align-items: center;
   padding: 30px, 10%;
+  background-color: var(--bg-body);
+  background-position: center;
 }
 
 .logo {
@@ -134,15 +176,8 @@ button:hover {
   background-color: var(--text-secondary);
 }
 
-/* Sections */
-
 /* About section */
-body {
-  color: var(--text-primary);
-  background-color: var(--text-secondary)
-}
 
-/* section */
 #about {
   width: 100%;
   padding: 78px;
@@ -158,29 +193,13 @@ body {
   width: 550px;
 }
 
-
 .main {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-}
-
-.about-text h2 {
-  color: var(--text-secondary);
-  font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.about-text h3 {
-  color: var(--text-secondary);
-  font-size: 25px;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
+  justify-content: space-around;
 }
 
 .about-text p {
@@ -203,25 +222,10 @@ body {
 }
 
 .project-main {
- /* This is to move text!! */
+  /* This is to move text!! */
   max-width: 95%;
   margin: 0 auto;
   display: flex;
-}
-
-.projects-text h2 {
-  color: var(--text-secondary);
-  font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.projects-text h3 {
-  color: var(--text-secondary);
-  font-size: 25px;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
 }
 
 .projects-text ul {
@@ -233,6 +237,7 @@ body {
 }
 
 /* Coursework Section */
+
 #coursework {
   width: 100%;
   padding: 78px;
@@ -247,22 +252,6 @@ body {
   max-width: 95%;
   margin: 0 auto;
   display: flex;
-
-}
-
-.coursework-text h2 {
-  color: rgba(0, 136, 169, 0.8);
-  font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.coursework-text h3 {
-  color: rgba(0, 136, 169, 0.8);
-  font-size: 25px;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
 }
 
 .coursework-text p {
@@ -274,6 +263,7 @@ body {
 }
 
 /* Skills Section */
+
 #skills {
   width: 100%;
   padding: 78px;
@@ -288,38 +278,23 @@ body {
   max-width: 95%;
   margin: 0 auto;
   display: flex;
-
 }
 
-.skills-text h2 {
-  color: var(--text-secondary);
-  font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.skills-text h3 {
-  color: var(--text-secondary);;
-  font-size: 25px;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
-}
-
-.skills-text li, b {
+.skills-text li,
+b {
   color: var(--text-primary);
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
-} 
+}
 
 /* Contacts Section */
 
 #contact {
   width: 100%;
   padding: 78px;
-  background-color: var(--bg-body)
+  background-color: var(--bg-body);
 }
 
 #contact img {
@@ -331,34 +306,11 @@ body {
   width: 550px;
 }
 
-
 .contacts-main {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-}
-
-.contacts-text h2 {
-  color: var(--text-secondary);
-  font-size: 80px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-body {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
+  justify-content: space-around;
 }
