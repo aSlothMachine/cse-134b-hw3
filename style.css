@@ -17,7 +17,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /* background-color: var(--bg-body); */
 }
 
 html {
@@ -26,14 +25,15 @@ html {
 
 header {
   text-align: center;
-  padding: 400px;
+  padding: 380px;
+
   background-image: url("images/img-header.jpg");
   background-size: cover;
 }
 
 body {
   color: var(--text-primary);
-  background-color: var(--text-secondary);
+  /* background-color: var(--text-secondary); */
   display: flex;
   flex-direction: column;
 
@@ -44,7 +44,7 @@ body {
 
 h1 {
   font-size: 36px;
-  /* background-color: var(--bg-body); */
+  background-color: var(--bg-body);
 }
 
 h2 {
@@ -77,7 +77,7 @@ h3 {
 @keyframes animate {
 
   0% {
-    content: "a computer science student at UC, San Diego.";
+    content: "a computer science student.";
   }
 
   50% {
@@ -94,7 +94,7 @@ h3 {
 }
 
 #change:after {
-  content: "a computer science student at UC, San Diego.";
+  content: "a computer science student.";
   animation: animate linear infinite 10s;
   padding-left: 10px;
 
