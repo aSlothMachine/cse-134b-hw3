@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   --text-primary: #312F2F;
   --text-secondary: rgba(0, 136, 169, 1);
@@ -43,20 +43,20 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.5rem;
   background-color: var(--bg-body);
 }
 
 h2 {
   color: var(--text-secondary);
-  font-size: 80px;
+  font-size: 5rem;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 h3 {
   color: var(--text-secondary);
-  font-size: 25px;
+  font-size: 1.5rem;
   text-transform: capitalize;
   margin-bottom: 25px;
   letter-spacing: 2px;
@@ -107,7 +107,7 @@ a,
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-primary);
   text-decoration: none;
   
@@ -177,22 +177,18 @@ button:hover {
   background-color: var(--text-secondary);
 }
 
-/* About section */
 
-#about {
+#about, #projects, #coursework, #skills, #contact {
   width: 100%;
-  padding: 78px;
+  padding: 42px;
   background-color: var(--bg-body)
 }
 
-#about img {
-  height: auto;
-  width: 420px;
-}
-
-.about-text {
+.about-text, .projects-text, .coursework-text, .skills-text, .contacts-text {
   width: 550px;
 }
+
+/* About section */
 
 .main {
   width: 1130px;
@@ -207,20 +203,16 @@ button:hover {
   color: var(--text-primary);
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 45px;
 }
 
-/* Projects Section */
-#projects {
-  width: 100%;
-  padding: 78px;
-  background-color: var(--bg-body);
+#about img {
+  height: auto;
+  width: 420px;
 }
 
-.projects-text {
-  width: 550px;
-}
+/* Projects Section */
 
 .project-main {
   /* This is to move text!! */
@@ -233,21 +225,11 @@ button:hover {
   color: var(--text-primary);
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 45px;
 }
 
 /* Coursework Section */
-
-#coursework {
-  width: 100%;
-  padding: 78px;
-  background-color: var(--bg-body);
-}
-
-.coursework-text {
-  width: 550px;
-}
 
 .coursework-main {
   max-width: 95%;
@@ -259,21 +241,11 @@ button:hover {
   color: var(--text-primary);
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 45px;
 }
 
 /* Skills Section */
-
-#skills {
-  width: 100%;
-  padding: 78px;
-  background-color: var(--bg-body);
-}
-
-.skills-text {
-  width: 550px;
-}
 
 .skills-main {
   max-width: 95%;
@@ -286,25 +258,15 @@ b {
   color: var(--text-primary);
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 45px;
 }
 
 /* Contacts Section */
 
-#contact {
-  width: 100%;
-  padding: 78px;
-  background-color: var(--bg-body);
-}
-
 #contact img {
   height: auto;
   width: 100px;
-}
-
-.contacts-text {
-  width: 550px;
 }
 
 .contacts-main {
@@ -315,3 +277,13 @@ b {
   align-items: center;
   justify-content: space-around;
 }
+
+/*Don't forget to validate CSS and HTML*/
+/* backgorund img suggests to make something personal instead of generic */
+/* fix empty space by shifting some text to the right (stretch) */
+/* hamburger suggested */
+/* use grouping selector for duplicate codes */
+/* for homework specs try to meet at least one but dont need all */
+/* pictures do need to be optimized but currently it is fine */
+/* em for child div inside a parent div but try REM , especially for font sizes*/
+/* Try to change to relative units (REM preferred for root or em) but em has few cases relative to parent. Few places need absolute. */
