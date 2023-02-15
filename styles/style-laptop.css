@@ -11,7 +11,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 * {
@@ -25,42 +25,41 @@ html {
 
 header {
   text-align: center;
-  padding: 380px;
+  padding: 225px;
 
-  background-image: url("images/img-header.webp");
+  background-image: url("../images/img-header.webp");
   background-size: cover;
 }
 
 body {
   color: var(--text-primary);
-  /* background-color: var(--text-secondary); */
   display: flex;
   flex-direction: column;
 
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
+} 
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   background-color: var(--bg-body);
 }
 
 h2 {
   color: var(--text-secondary);
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 h3 {
   color: var(--text-secondary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: 25px;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; 
+} 
 
 /* Animations */
 
@@ -89,16 +88,6 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .heading {
-  width: 50em;
-  }
-
-  #about img {
-    
-  }
-}
-
 #my-name {
   color: var(--text-secondary);
 }
@@ -108,11 +97,11 @@ h3 {
   animation: animate linear infinite 10s;
   padding-left: 10px;
 
-}
+} 
 
 /* Nav Bar CSS*/
 
-.heading li,
+heading li,
 a,
 button {
   font-weight: 500;
@@ -173,7 +162,7 @@ nav {
 }
 
 button {
-  margin-left: 20px;
+
   padding: 9px 25px;
   background-color: var(--text-secondary);
   border: none;
@@ -195,12 +184,12 @@ button:hover {
 
 .about-text, .projects-text, .coursework-text, .skills-text, .contacts-text {
   width: 550px;
-}
+} 
 
 /* About section */
 
 .main {
-  width: 1130px;
+  width: 1130px; 
   max-width: 95%;
   margin: 0 auto;
   display: flex;
@@ -219,9 +208,10 @@ button:hover {
 #about img {
   height: auto;
   width: 45vh;
-
+  align-items: center;
   transform: none;
-}
+  padding-right: 25px;
+} 
 
 /* Projects Section */
 
@@ -237,8 +227,8 @@ button:hover {
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 1.125rem;
-  margin-bottom: 45px;
-}
+  margin-bottom: 45px; 
+} 
 
 /* Coursework Section */
 
@@ -254,7 +244,7 @@ button:hover {
   line-height: 28px;
   font-size: 1.125rem;
   margin-bottom: 45px;
-}
+} 
 
 /* Skills Section */
 
@@ -271,7 +261,7 @@ b {
   line-height: 28px;
   font-size: 1.125rem;
   margin-bottom: 45px;
-}
+} 
 
 /* Contacts Section */
 
@@ -280,21 +270,7 @@ b {
   width: 100px;
 }
 
-.contacts-main {
-  /* width: 1130px;
-  max-width: 100%; */
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Don't forget to validate CSS and HTML*/
-/* backgorund img suggests to make something personal instead of generic */
-/* fix empty space by shifting some text to the right (stretch) */
-/* hamburger suggested */
-/* use grouping selector for duplicate codes */
-/* for homework specs try to meet at least one but dont need all */
-/* pictures do need to be optimized but currently it is fine */
-/* em for child div inside a parent div but try REM , especially for font sizes*/
-/* Try to change to relative units (REM preferred for root or em) but em has few cases relative to parent. Few places need absolute. */
+.contacts-main { 
+ 
+  
+} 
