@@ -89,6 +89,16 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .heading {
+  width: 50em;
+  }
+
+  #about img {
+    
+  }
+}
+
 #my-name {
   color: var(--text-secondary);
 }
