@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 380px;
 
-  background-image: url("../images/img-header.webp");
+  background-image: url("../images/img-header-compressed.webp"); /* Source (free to use): https://unsplash.com/photos/npxXWgQ33ZQ */
   background-size: cover;
 }
 
@@ -86,16 +86,6 @@ h3 {
 
   75% {
     content: "an asipiring software engineer.";
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .heading {
-  width: 50em;
-  }
-
-  #about img {
-    
   }
 }
 

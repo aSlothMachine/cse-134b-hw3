@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 225px;
 
-  background-image: url("../images/img-header.webp");
+  background-image: url("../images/img-header-compressed.webp"); /* Source (free to use): https://unsplash.com/photos/npxXWgQ33ZQ */
   background-size: cover;
 }
 
