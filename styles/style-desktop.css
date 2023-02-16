@@ -209,7 +209,7 @@ button:hover {
 #about img {
   height: auto;
   width: 45vh;
-
+  padding: 30px;
   transform: none;
 }
 
@@ -268,23 +268,22 @@ b {
 #contact img {
   height: auto;
   width: 100px;
+  padding: 20px;
 }
 
 .contacts-main {
   /* width: 1130px;
   max-width: 100%; */
-  margin: 0;
+  /* margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  padding-bottom: 200px;
 }
 
 /*Don't forget to validate CSS and HTML*/
 /* backgorund img suggests to make something personal instead of generic */
 /* fix empty space by shifting some text to the right (stretch) */
-/* hamburger suggested */
-/* use grouping selector for duplicate codes */
 /* for homework specs try to meet at least one but dont need all */
-/* pictures do need to be optimized but currently it is fine */
 /* em for child div inside a parent div but try REM , especially for font sizes*/
 /* Try to change to relative units (REM preferred for root or em) but em has few cases relative to parent. Few places need absolute. */
