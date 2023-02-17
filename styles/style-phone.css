@@ -140,15 +140,6 @@ nav {
   list-style: none;
 }
 
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li:nth-child(1) {
-  padding: 0 20px 0 0;
-}
-
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
@@ -162,8 +153,6 @@ nav {
 }
 
 button {
-  margin-left: 20px;
-  padding: 9px 25px;
   background-color: var(--text-secondary);
   border: none;
   border-radius: 50px;
@@ -174,7 +163,6 @@ button {
 button:hover {
   background-color: var(--text-secondary);
 }
-
 
 #about, #projects, #coursework, #skills, #contact {
   width: 100%;
